@@ -19,6 +19,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/settings_label"
     android:key="parent">
+    
+
+    <PreferenceScreen
+        android:key="threshold_table"
+        android:title="Threshold table"
+        android:summary="Generate threshold table">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.ThresholdTable" />
+    </PreferenceScreen>
 
         <!-- Operator hook -->
 

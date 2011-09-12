@@ -58,7 +58,7 @@ import java.util.Map;
  */
 public class PowerUsageSummary extends PreferenceActivity implements Runnable {
 
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
 
     private static final String TAG = "PowerUsageSummary";
 
