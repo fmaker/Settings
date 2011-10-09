@@ -20,6 +20,25 @@
     android:title="@string/settings_label"
     android:key="parent">
     
+    <PreferenceScreen
+        android:key="load_profile"
+        android:title="SmartSync"
+        android:summary="">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.SmartSync" />
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:key="load_profile"
+        android:title="Load Battery Profile"
+        android:summary="">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.LoadProfile" />
+    </PreferenceScreen>
 
     <PreferenceScreen
         android:key="threshold_table"
